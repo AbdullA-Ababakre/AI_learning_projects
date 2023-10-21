@@ -87,7 +87,7 @@ const VideoChat = () => {
             <PageHeader
               heading="Talk to Your Videos"
               boldText="This tool lets you chat with your YouTube videos. "
-              description="This tool uses the YouTube API, Text Splitters, and the Conversational Retrieval QA CHain.  Head over to Module X to get started!"
+              description="This tool uses the YouTube API, Text Splitters, and the Conversational Retrieval QA CHain."
             />
           </>
         }

@@ -107,8 +107,7 @@ const PDFLoader = () => {
               boldText="How to get rich? How to be happy?"
               description="This tool will
             let you ask anything contained in a PDF document. This tool uses
-            Embeddings, Pinecone, VectorDBQAChain, and VectorStoreAgents. Head over to Module 1 to
-            get started!"
+            Embeddings, Pinecone, VectorDBQAChain, and VectorStoreAgents. Please click the upload book first before use "
             />
             <ButtonContainer>
               {/* <Button

@@ -72,8 +72,8 @@ const Streaming = () => {
           <>
             <PageHeader
               heading="Spit a Rap."
-              boldText="Nobody likes waiting for APIs to load. Use streaming to improve the user experience of chat bots."
-              description="This tutorial uses streaming.  Head over to Module X to get started!"
+              boldText=" Use streaming to improve the user experience of chat bots."
+              description=""
             />
           </>
         }
