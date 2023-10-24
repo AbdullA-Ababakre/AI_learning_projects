@@ -1,6 +1,11 @@
-import React from "react";
+import React, {useEffect} from "react";
 
 const ResultStreaming = ({ data }) => {
+
+  useEffect(()=>{
+    console.log("data999",data);
+  },[data]);
+  
   return (
     <div className="bg-gray-100 p-6 rounded shadow mb-4">
       {/* If data is a string */}

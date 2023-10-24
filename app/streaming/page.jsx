@@ -23,7 +23,6 @@ const Streaming = () => {
 
   const handleSubmit = async () => {
     try {
-      console.log(`sending ${prompt}`);
       await fetch("/api/streaming", {
         method: "POST",
         headers: {
@@ -36,7 +35,6 @@ const Streaming = () => {
         source.close();
       }
       // create new eventsource
-
       const newSource = new EventSource("/api/streaming");
 
       setSource(newSource);
@@ -64,6 +62,12 @@ const Streaming = () => {
       }
     };
   }, [source]);
+
+  useEffect(() => {
+    console.log("11111");
+  }, [data]);
+
+
   return (
     <>
       <Title emoji="💭" headingText="Streaming" />

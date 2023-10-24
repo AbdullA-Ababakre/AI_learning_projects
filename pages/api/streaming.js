@@ -25,7 +25,6 @@ export default function handler(req, res) {
     // create the prompt
     const prompt = `Create me a short rap about my name and city. Make it funny and punny. Name: ${input}`;
 
-    console.log({ prompt });
     // call frontend to backend
     chat.call(prompt).then(() => {
       sse.send(null, "end");

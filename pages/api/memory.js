@@ -19,9 +19,7 @@ export default async function handler(req, res) {
       chain = new ConversationChain({ llm: model, memory: memory });
     }
 
-    console.log({ input });
     const response = await chain.call({ input });
-    console.log({ response });
     return res.status(200).json({ output: response });
   } else {
     res.status(405).json({ message: "Only POST is allowed" });
